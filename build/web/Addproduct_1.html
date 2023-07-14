@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <!-- Code for Side bar -->
+        <!-- link for Css -->
+         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <!-- Code for Icons -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+        <style>
+            *{
+                font-family: 'Poppins', sans-serif;
+            }
+            table{
+                margin-left: auto;
+                margin-right: auto;
+                border: solid 1px;
+            }   
+            th, td {
+                padding: 15px;
+            }   
+        </style>
+    <script>
+        
+        function w3_open() {
+          document.getElementById("mySidebar").style.display = "block";
+          document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_close() {
+          document.getElementById("mySidebar").style.display = "none";
+          document.getElementById("myOverlay").style.display = "none";
+        }
+    </script>
+    </head>
+    <body>
+        <form action="Addproduct_1.jsp">
+         <!-- Sidebar -->
+      
+          <a href="AdminHome_1.jsp" class="w3-bar-item w3-button" style=" font-size: 30px"><i class="fa fa-home"></i></a>
+          <a href="ShowProduct_1.jsp" class="w3-bar-item w3-button" style=" font-size: 20px">Products</a> 
+          <a href="Searchproduct_1.jsp" class="w3-bar-item w3-button" style=" font-size: 30px"><i class="fa fa-search"></i></a>   
+          <a href="Addproduct_1.html" class="w3-bar-item w3-button" style=" font-size: 30px"><i class="fa fa-plus"></i></a>   
+          <a href="Editproduct_1.jsp" class="w3-bar-item w3-button" style=" font-size: 30px"><i class="fa fa-edit"></i></a>   
+          <a href="Deleteproduct_1.jsp" class="w3-bar-item w3-button" style=" font-size: 30px"><i class="fa fa-trash"></i></a> 
+        </div>
+       
+        <!-- Page Content -->
+        <div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+
+        <div>
+           
+          <div class="w3-container">
+            <center><h1>Add A product</h1></center>
+            <!-- Table  -->
+            <table border="1">
+                <tr>
+                    <td colspan="2">Enter Product Id <input type="text" name="ProductId"></td>
+                </tr>
+                <tr style="height: 120px;">
+                    <td> Enter Product Type 
+                        <select name="ProductType">
+                            <option>Processor</option>
+                            <option>Ram</option>
+                            <option>Case</option>
+                            <option>Cpu Cooler</option>
+                            <option>GPU</option>
+                            <option>Storage</option>
+                            <option>Power Supply</option>
+                        </select>
+                    </td>
+                    <td> Enter Brand <input type="text" name="ProductBrand"></td>
+                    
+                </tr>
+                
+                <tr style="height: 120px;">
+                    <td> Enter Product Name <input type="text" name="ProductName"></td>
+                    <td> Choose A Image <input type="text" name="ProductImage"></td>
+                </tr>    
+                <tr style="height: 120px;">
+               
+                <td> Enter Price <input type="text" name="ProductPrice"></td>
+                <td> Enter Quantity <input type="text" name="ProductQuantity"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"> Enter Other Details About Product <input type="text" name="ProductDetails" height="" size="50"></td>
+                </tr>
+                <tr>
+                    <input type="submit" name="Add" value="Add">
+                    <input type="submit" name="Cancel" value="Cancel">
+                </tr>
+                
+            </table>
+
+          </div>
+        </div>
+     </form>
+    </body>
+</html>
+  
+        
+
+      
+
+
+      

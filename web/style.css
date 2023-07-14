@@ -1,0 +1,248 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 23 Aug, 2020, 3:16:38 PM
+    Author     : abc
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    font-family: 'Poppins', sans-serif;
+}
+.navbar{
+    display: flex; /* responsiveness*/
+    align-items: center; 
+    padding: 20px;
+}
+nav
+{
+    flex:1;
+    text-align: right;
+}
+nav ul{
+    display:inline-block;
+    list-style: none;//so no bullet
+}
+nav ul li
+{
+    display: inline-block;
+    margin-right: 20px;
+}
+a
+{
+    text-decoration: none;
+    color:#444;
+}
+p{
+    color: #555;
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.row
+{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.rowsize{
+    font-size: 20px;
+}
+.col-2
+{
+    flex-basis:50%; // both column can occupy50%
+    min-width: 300px;
+    }
+.col-2 img
+{
+    width: 500px;
+    height:auto;
+    max-width: 100%;
+    padding: 50px 0;
+}
+.col-2 h1
+{
+    
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+
+}
+.btn
+{
+    display: inline-block;
+    background-color: #ff523b;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px; 
+    transition: 0.5s;
+}
+.header
+{
+    background: radial-gradient("")
+}
+.header .row{
+    margin-top: auto;
+}
+.btn:hover{
+    background: #666666;
+}
+.categories
+{
+    margin: 70px 0;
+}
+.col-3{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: auto;
+    
+}
+.col-3 img{
+    width: 100%; //
+}
+.small-container{
+    max-width: 1080px;
+    
+    margin:auto;
+   
+}
+.col-4
+{
+    flex-basis: 25%; 
+    padding: 10px;  
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: scale(0.5s);
+}
+.col-4 img{
+    width: 100%;
+}
+.col-4:hover{
+    transform:scale(1.1);
+}
+.offer{
+    padding: 30px 0px;
+}
+
+/*<!------brands------>*/
+.brands{
+    margin: 100px auto;
+}
+.col-5
+{
+    width: 160px;
+}
+col-5
+{
+    width:100%;
+    cursor: pointer;
+}
+
+
+/*footer*/
+
+.footer
+{
+    background: #000;
+    color:floralwhite;
+    font-size: 14px;
+    padding: 60px 0 30px;
+}
+.footer p{
+    color: #8a8a8a;
+}
+.footer h3{
+    color: white;
+    margin-bottom: 20px;
+}
+.footer-col-1,.footer-col-2,.footer-col-3,.footer-col-4
+{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+.footer-col-1{
+    flex-basis: 30%;
+}
+.footer-col-2{
+    flex:1;
+    text-align: center;
+}
+
+.footer1
+{
+    font-weight: 600;
+    background: #000;
+    color:floralwhite;
+    font-size: 32px;
+    padding: 30px 0 30px;
+}
+.footer1 p{
+    color: #8a8a8a;
+}
+.footer1 h3{
+    color: white;
+    margin-bottom: 20px;
+}
+.footer1-col-1
+{
+    text-align: center;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+.footer1-col-1{
+    flex-basis: 50%;
+}
+
+.single-product
+{
+    margin-top: -20px;
+}
+.single-product .col-2 img
+{
+    padding: 0;
+}
+.single-product .col-2 
+{
+    padding: 30px;
+} 
+.single-product h4
+{
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+.single-product h1
+{
+    font-size:30px;
+}
+
+.title{
+    text-align: center;
+    margin: 0 auto 01px;
+    position: relative;
+    line-height: 60px;
+   
+}
+.title::after{
+    content: '';
+    background:#8a8a8a;
+    width: 1200px;
+    height: 2px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    transform:translate(-57%);
+}

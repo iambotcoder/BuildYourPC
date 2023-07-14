@@ -1,0 +1,150 @@
+    <!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <style type = "text/css">
+		body
+		{
+			
+			background-position:top; 
+			background-size:1425px,400px;
+			font-family: Century Gothic; 
+                        
+		}
+		.login-box
+		{
+			width:370px;
+			height:400px;
+			background:rgba(0,0,0,1); 
+			color:#fff;
+			top:20%;
+			left:35%;
+			position:absolute;
+			transform:translate(-50% -50%);
+			box-sizing: border-box;
+		}
+		.avatar
+		{
+			width:100px;
+			height:100px;
+			border-radius: 50%;
+			position:absolute;
+			top:-50px;
+			left:calc(50% - 50px);
+		}
+		h1
+		{	
+			position: relative;
+			top:15%;
+			margin :0;
+			padding: 0 0 20px;
+			text-align:center;
+			font-size: 22px;
+		}
+		.login-box p
+		{
+			position: relative;
+			left:10%;
+			margin: 0;
+			padding: 0;
+			font-weight: bold;
+		}
+		.login-box input
+		{
+			position: relative;
+			left:10%;
+			width:80%;
+			margin-bottom: 20px;
+		}
+		.login-box input[type = "text"],input[type = "password"]
+		{
+			border:none;
+			border-bottom: 1px solid #fff;
+			background :transparent;
+			outline :none;
+			height:40px;
+			color:#fff;
+			font-size: 16px;
+		}
+		.login-box input[type="submit"]
+		{
+			font-family: Century Gothic;
+			border:none;
+			outline: none;
+			height:40px;
+			background : #fff;
+			font-size: 18px;
+			border-radius: 20px;
+			font-weight: bold; 
+		}
+		.login-box input[type="submit"]:hover
+		{
+			cursor: pointer;
+			background: #000;
+			color:#fff;
+			transition: 0.4s;
+		}
+		.login-box a
+		{
+			text-decoration: none; 
+			font-size: 17px; // size of user registration
+			color:#fff;
+                        border-radius: 20px; // so that button is circle
+
+		}
+		ul
+		{
+                    font-family: Century Gothic; 
+			position: relative;
+			bottom:2%;
+		}
+		ul li 
+		{
+		  display:inline-block;
+		  position: relative;
+                  right: 2%;
+		}
+
+		ul li a
+		{
+                    
+                   font-weight: bold;
+		  font-family: Century Gothic;
+		  color : #fff;
+		  text-decoration: none;
+		  padding : 10px 85px;
+		  border : 2px solid #000;
+		  transition: 0.6s ease;
+		}
+		li a:hover
+		{                   
+			color:#000;
+			background-color: #fff;
+		}
+	</style>
+	<title>Admin Login Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        
+        <div class="login-box">
+       
+            <h1>Admin Login Here </h1><br><br><br>
+            <form action="Adminlogin.jsp">
+                    <p>Username</p>
+                    <input type="text" name="username" placeholder="Enter username" required>
+                    <p>Password</p>
+                    <input type="password" name="password" placeholder="Enter password" required><br><br>
+                    <input type="submit" name="login" value="Login">
+            </form>
+            
+    </div>
+        
+    </body>
+    
+</html>
