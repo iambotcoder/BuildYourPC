@@ -1,5 +1,5 @@
 
-```markdown
+---
 # Build Your PC - A PC Builder Tool
 
 ## Introduction
@@ -50,4 +50,4 @@ As a computer enthusiast, I often faced difficulties when trying to build a cust
 
 For any questions or support, you can reach out to iambotcoder at iambotcoder@gmail.com.
 
-```
+---
