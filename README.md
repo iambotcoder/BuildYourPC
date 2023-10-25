@@ -50,7 +50,4 @@ As a computer enthusiast, I often faced difficulties when trying to build a cust
 
 For any questions or support, you can reach out to iambotcoder at iambotcoder@gmail.com.
 
-## License
-
-This project is licensed under the iambotcoder License 
 ```
